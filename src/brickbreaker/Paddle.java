@@ -35,15 +35,16 @@ public class Paddle extends Sprite implements Commons{
             x = 0;
         }
 
-        if (x >= WIDTH - imageWidth) {
-            x = WIDTH - imageWidth;
+        if (x >= WIDTH - imageWidth-30) {
+            x = WIDTH - imageWidth-30;
         }
     }
+
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
 
         if (key == KeyEvent.VK_LEFT) {
-            dx = -1
+            dx = -1;
         }
 
         if (key == KeyEvent.VK_RIGHT){
@@ -59,7 +60,7 @@ public class Paddle extends Sprite implements Commons{
             dx = 0;
         }
 
-        if (key = KeyEvent.VK_RIGHT){
+        if (key == KeyEvent.VK_RIGHT){
             dx = 0;
         }
     }
